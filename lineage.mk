@@ -25,7 +25,7 @@ TARGET_SCREEN_WIDTH := 540
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/grandppltedx/full_grandpplteser.mk)
+$(call inherit-product, device/samsung/grandpplteser/full_grandpplteser.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := grandpplteser

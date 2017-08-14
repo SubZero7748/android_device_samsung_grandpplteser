@@ -23,7 +23,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, device/samsung/grandppltedx/grandpplteser.mk)
+$(call inherit-product, device/samsung/grandpplteser/grandpplteser.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_grandpplteser
