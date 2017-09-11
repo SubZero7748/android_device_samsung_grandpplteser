@@ -51,10 +51,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 3900702720
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 #Kernel
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2
 BOARD_KERNEL_BASE := 0x3fffc000
-BOARD_MKBOOTIMG_ARGS := --base 0x3fffc000 --pagesize 4096 --kernel_offset 0x00008000 --ramdisk_offset 0x04004000 --second_offset 0x00f04000 --tags_offset 0x0e004000 --board 1480056755 --dt device/samsung/grandpplteser/dt.img
+BOARD_MKBOOTIMG_ARGS := --base 0x3fffc000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04004000 --second_offset 0x00f04000 --tags_offset 0x0e004000 --board SRPPH31A000KU
 MTK_APPENDED_DTB_SUPPORT := yes
 
 #FS
