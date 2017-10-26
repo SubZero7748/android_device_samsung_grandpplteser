@@ -22,6 +22,14 @@
 
 LOCAL_PATH := $(call my-dir)
 
+include $(CLEAR_VARS)
+
+$(shell (cp kernel/samsung/grandpplteser/firmware/tsp_zinitix/FIRMWARE.BIN kernel/samsung/grandpplteser/firmware/tsp_zinitix/bt541_GP.fw))
+$(shell (mkdir -p out/target/product/grandpplteser/obj/KERNEL_OBJ/firmware/tsp_zinitix/))
+$(shell (cp kernel/samsung/grandpplteser/firmware/tsp_zinitix/FIRMWARE.BIN out/target/product/grandpplteser/obj/KERNEL_OBJ/firmware/tsp_zinitix/bt541_GP.fw))
+#$(shell (mkdir -p out/target/product/grandpplteser/obj/lib/))
+#$(shell (cp device/samsung/grandpplteser/lib/libaudiopolicymanager.so out/target/product/grandpplteser/obj/lib/libaudiopolicymanager.so))
+
 ifeq ($(TARGET_DEVICE),grandpplteser)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
